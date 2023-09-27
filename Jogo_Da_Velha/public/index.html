@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Jogo da velha</title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' type='text/css'href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="panel">
+        <div>
+          <span>PLAYER X</span>
+          <span class="points">0</span>
+        </div>
+
+        <div>
+          <span>VELHA</span>
+          <span class="points">0</span>
+        </div>
+
+        <div>
+          <span>PLAYER O</span>
+          <span class="points">0</span>
+        </div>
+      </div>
+
+      <h1 id="indicator"></h1>
+
+      <div id="game">
+        <div id="board">
+          <div data-index="1"></div>
+          <div data-index="2"></div>
+          <div data-index="3"></div>
+          <div data-index="4"></div>
+          <div data-index="5"></div>
+          <div data-index="6"></div>
+          <div data-index="7"></div>
+          <div data-index="8"></div>
+          <div data-index="9"></div>
+        </div>
+      </div>
+
+      <div class="btn_container">
+        <button class="btn play_again">Jogue de novo</button>
+        <button class="btn reset">Reiniciar pontos</button>
+      </div>
+    </div>
+  
+    <script type="module" src="index.js"></script>
+
+  </body>
+</html>
